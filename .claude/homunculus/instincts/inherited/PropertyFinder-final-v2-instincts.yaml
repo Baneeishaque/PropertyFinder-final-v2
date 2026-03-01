@@ -1,0 +1,396 @@
+# Instincts generated from https://github.com/Baneeishaque/PropertyFinder-final-v2
+# Generated: 2026-03-01T14:57:21.726Z
+# Version: 2.0
+
+---
+id: PropertyFinder-final-v2-commit-length
+trigger: "when writing a commit message"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: https://github.com/Baneeishaque/PropertyFinder-final-v2
+---
+
+# PropertyFinder Final V2 Commit Length
+
+## Action
+
+Keep commit messages concise (under 50 characters)
+
+## Evidence
+
+- Average commit message length: 35 chars
+- Based on 10 commits
+
+---
+id: PropertyFinder-final-v2-naming-files
+trigger: "when creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/Baneeishaque/PropertyFinder-final-v2
+---
+
+# PropertyFinder Final V2 Naming Files
+
+## Action
+
+Use camelCase naming convention
+
+## Evidence
+
+- Analyzed file naming patterns in repository
+- Dominant pattern: camelCase
+
+---
+id: PropertyFinder-final-v2-import-relative
+trigger: "when importing modules"
+confidence: 0.75
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/Baneeishaque/PropertyFinder-final-v2
+---
+
+# PropertyFinder Final V2 Import Relative
+
+## Action
+
+Use relative imports for project files
+
+## Evidence
+
+- Import analysis shows relative import pattern
+- Example: import { x } from '../lib/x'
+
+---
+id: PropertyFinder-final-v2-export-style
+trigger: "when exporting from a module"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/Baneeishaque/PropertyFinder-final-v2
+---
+
+# PropertyFinder Final V2 Export Style
+
+## Action
+
+Prefer default exports
+
+## Evidence
+
+- Export pattern analysis
+- Dominant style: default
+
+---
+id: PropertyFinder-final-v2-test-separate
+trigger: "when writing tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: https://github.com/Baneeishaque/PropertyFinder-final-v2
+---
+
+# PropertyFinder Final V2 Test Separate
+
+## Action
+
+Place tests in the tests/ or __tests__/ directory, mirroring src structure
+
+## Evidence
+
+- Separate test directory pattern detected
+- Tests live in dedicated test folders
+
+---
+id: PropertyFinder-final-v2-workflow-dependency-management-update
+trigger: "when doing dependency management update"
+confidence: 0.6
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/Baneeishaque/PropertyFinder-final-v2
+---
+
+# PropertyFinder Final V2 Workflow Dependency Management Update
+
+## Action
+
+Follow the dependency-management-update workflow:
+1. Update package.json with new dependency versions
+2. Regenerate package-lock.json
+3. Update yarn.lock file
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~2x per month
+- Files: package.json, package-lock.json, yarn.lock
+
+---
+id: PropertyFinder-final-v2-workflow-external-tool-integration
+trigger: "when doing external tool integration"
+confidence: 0.6
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/Baneeishaque/PropertyFinder-final-v2
+---
+
+# PropertyFinder Final V2 Workflow External Tool Integration
+
+## Action
+
+Follow the external-tool-integration workflow:
+1. Create configuration file
+2. Submit pull request for integration
+3. Merge configuration into main branch
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~2x per month
+- Files: renovate.json, .whitesource
+
+---
+id: PropertyFinder-final-v2-workflow-documentation-maintenance
+trigger: "when doing documentation maintenance"
+confidence: 0.6
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/Baneeishaque/PropertyFinder-final-v2
+---
+
+# PropertyFinder Final V2 Workflow Documentation Maintenance
+
+## Action
+
+Follow the documentation-maintenance workflow:
+1. Edit README.md content
+2. Resolve merge conflicts if present
+3. Commit documentation changes
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~2x per month
+- Files: README.md
+
+---
+id: propertyfinder-final-v2-camelcase-files
+trigger: "When creating new JavaScript files"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: Baneeishaque/PropertyFinder-final-v2
+---
+
+# Propertyfinder Final V2 Camelcase Files
+
+## Action
+
+Use camelCase naming convention for file names
+
+## Evidence
+
+- Pattern observed in existing file structure
+- Consistent with JavaScript conventions in codebase
+
+---
+id: propertyfinder-final-v2-pascalcase-classes
+trigger: "When defining new classes or components"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: Baneeishaque/PropertyFinder-final-v2
+---
+
+# Propertyfinder Final V2 Pascalcase Classes
+
+## Action
+
+Use PascalCase naming convention for class names
+
+## Evidence
+
+- Established naming pattern in React Native architecture
+- Standard React component naming observed
+
+---
+id: propertyfinder-final-v2-screaming-snake-constants
+trigger: "When defining constant variables"
+confidence: 0.6
+domain: code-style
+source: repo-analysis
+source_repo: Baneeishaque/PropertyFinder-final-v2
+---
+
+# Propertyfinder Final V2 Screaming Snake Constants
+
+## Action
+
+Use SCREAMING_SNAKE_CASE naming convention
+
+## Evidence
+
+- JavaScript constant naming pattern in codebase
+
+---
+id: propertyfinder-final-v2-relative-imports
+trigger: "When importing local modules or components"
+confidence: 0.6
+domain: code-style
+source: repo-analysis
+source_repo: Baneeishaque/PropertyFinder-final-v2
+---
+
+# Propertyfinder Final V2 Relative Imports
+
+## Action
+
+Use relative import paths
+
+## Evidence
+
+- Import style pattern observed in module organization
+
+---
+id: propertyfinder-final-v2-default-exports
+trigger: "When exporting main module functionality"
+confidence: 0.6
+domain: code-style
+source: repo-analysis
+source_repo: Baneeishaque/PropertyFinder-final-v2
+---
+
+# Propertyfinder Final V2 Default Exports
+
+## Action
+
+Use default export style
+
+## Evidence
+
+- Export pattern consistent with single-package architecture
+
+---
+id: propertyfinder-final-v2-separate-tests
+trigger: "When creating test files"
+confidence: 0.7
+domain: testing
+source: repo-analysis
+source_repo: Baneeishaque/PropertyFinder-final-v2
+---
+
+# Propertyfinder Final V2 Separate Tests
+
+## Action
+
+Place tests in separate directory structure from source code
+
+## Evidence
+
+- Architecture shows testLocation: 'separate'
+
+---
+id: propertyfinder-final-v2-freeform-commits
+trigger: "When making commits"
+confidence: 0.8
+domain: git
+source: repo-analysis
+source_repo: Baneeishaque/PropertyFinder-final-v2
+---
+
+# Propertyfinder Final V2 Freeform Commits
+
+## Action
+
+Write descriptive commit messages without strict prefix conventions
+
+## Evidence
+
+- Commit examples show freeform style
+- No consistent prefixes in commit history
+- Average length of 35 characters
+
+---
+id: propertyfinder-final-v2-dependency-update-workflow
+trigger: "When dependencies need updating"
+confidence: 0.75
+domain: workflow
+source: repo-analysis
+source_repo: Baneeishaque/PropertyFinder-final-v2
+---
+
+# Propertyfinder Final V2 Dependency Update Workflow
+
+## Action
+
+Update package.json, regenerate package-lock.json, and update yarn.lock in sequence
+
+## Evidence
+
+- Commit: 'Update dependency react-native to v0.84.1'
+- Pattern shows lock file maintenance
+- Workflow frequency of ~2x/year
+
+---
+id: propertyfinder-final-v2-tool-integration-workflow
+trigger: "When adding automated development tools"
+confidence: 0.8
+domain: workflow
+source: repo-analysis
+source_repo: Baneeishaque/PropertyFinder-final-v2
+---
+
+# Propertyfinder Final V2 Tool Integration Workflow
+
+## Action
+
+Create configuration file, submit pull request, then merge to main branch
+
+## Evidence
+
+- Commit: 'Add renovate.json'
+- Commit: 'Merge pull request #17 from Baneeishaque/renovate/configure'
+- Commit: 'Add .whitesource configuration file'
+
+---
+id: propertyfinder-final-v2-documentation-workflow
+trigger: "When documentation needs updates or during branch merges"
+confidence: 0.7
+domain: workflow
+source: repo-analysis
+source_repo: Baneeishaque/PropertyFinder-final-v2
+---
+
+# Propertyfinder Final V2 Documentation Workflow
+
+## Action
+
+Edit README.md, resolve any merge conflicts, then commit changes
+
+## Evidence
+
+- Commit: 'Update README.md'
+- Commit: 'Merge branch 'master' of https://github.com/Baneeishaque/PropertyFinder-final-v2'
+
+---
+id: propertyfinder-final-v2-react-native-structure
+trigger: "When organizing React Native project files"
+confidence: 0.8
+domain: architecture
+source: repo-analysis
+source_repo: Baneeishaque/PropertyFinder-final-v2
+---
+
+# Propertyfinder Final V2 React Native Structure
+
+## Action
+
+Maintain separate android, ios, and Resources folders with single entry point
+
+## Evidence
+
+- Folder structure shows android, ios, Resources directories
+- Entry point: index.js
+- Single-package architecture type
+
